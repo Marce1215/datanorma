@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protección de datos para pymes en Chile | Ley 21.719 | Datanorma</title>
+<meta name="description" content="Diagnóstico e implementación de protección de datos personales para pymes en Chile. Identificamos sus brechas frente a la Ley 21.719 y las convertimos en un plan con prioridades, plazos y responsables. Primera conversación sin costo.">
+<link rel="canonical" href="https://datanorma.cl/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1F3864">
+<meta name="author" content="Datanorma">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datanorma.cl/">
+<meta property="og:site_name" content="Datanorma">
+<meta property="og:title" content="Protección de datos para pymes en Chile | Ley 21.719">
+<meta property="og:description" content="Identificamos sus brechas frente a la Ley 21.719 y las convertimos en acciones con prioridades, plazos y responsables.">
+<meta property="og:image" content="https://datanorma.cl/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_CL">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Protección de datos para pymes en Chile | Ley 21.719">
+<meta name="twitter:description" content="Diagnóstico e implementación de protección de datos personales para pymes chilenas.">
+<meta name="twitter:image" content="https://datanorma.cl/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://datanorma.cl/#organizacion",
+  "name": "Datanorma",
+  "description": "Consultoría en cumplimiento de la Ley 21.719 de protección de datos personales para pymes en Chile.",
+  "url": "https://datanorma.cl/",
+  "email": "contacto@datanorma.cl",
+  "telephone": "+56947309402",
+  "areaServed": { "@type": "Country", "name": "Chile" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
+  "knowsAbout": [
+    "Ley 21.719",
+    "Protección de datos personales",
+    "Evaluación de impacto en protección de datos",
+    "Seguridad de la información",
+    "Contratos de tratamiento de datos"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de cumplimiento Ley 21.719",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico de cumplimiento" },
+        "priceCurrency": "CLP", "price": "690000", "priceValidUntil": "2026-11-30" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Registro de actividades de tratamiento" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Procedimiento ante vulneraciones de seguridad" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inventario y contratos con proveedores" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evaluación de impacto" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Simulacro y capacitación" } }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cuánto cuesta un diagnóstico de protección de datos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Desde $690.000 netos en precio de lanzamiento para empresas de hasta 25 trabajadores sin datos sensibles. El valor depende de la dotación, si se tratan datos sensibles y del número de sedes y sistemas." } },
+    { "@type": "Question", "name": "¿Qué documentos recibe la empresa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un informe con el nivel de madurez de 29 controles, los hallazgos priorizados por riesgo para las personas y una hoja de ruta con plazos y responsables sugeridos." } },
+    { "@type": "Question", "name": "¿Cuál es la diferencia entre diagnóstico e implementación?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El diagnóstico identifica las brechas y define el orden en que deben resolverse. La implementación produce los documentos y procedimientos que cierran cada brecha, y se contrata por separado según lo que el diagnóstico revele." } },
+    { "@type": "Question", "name": "¿Cuándo entra en vigencia la Ley 21.719?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El 1 de diciembre de 2026, fecha desde la cual la Agencia de Protección de Datos Personales puede fiscalizar y sancionar." } },
+    { "@type": "Question", "name": "¿Cómo preparo a mi empresa para la primera evaluación?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reúna el listado de sistemas donde hay datos personales, los contratos con proveedores que acceden a esos datos, y designe a quien conozca los procesos de cada área. Con eso el levantamiento toma unas tres horas." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1621; --navy:#1F3864; --navy-d:#152643; --muted:#5A6675;
+    --line:#D8DDE4; --base:#F5F6F8; --surface:#FFFFFF;
+    --signal:#A32C22; --warm:#8A5A16; --steel:#46586E;
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+    --wrap:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--base); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--wrap); margin:0 auto; padding:0 26px}
+  h1,h2,h3{font-family:var(--serif); font-weight:500; letter-spacing:-.012em; line-height:1.16; margin:0}
+  h1{font-size:clamp(38px,5.4vw,62px)}
+  h2{font-size:clamp(28px,3.4vw,40px)}
+  h3{font-size:21px}
+  p{margin:0 0 1em}
+  a{color:var(--navy)}
+  .lede{font-size:clamp(18px,2vw,21px); color:var(--muted); line-height:1.58}
+  .eyebrow{font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:14px}
+  .num{font-variant-numeric:tabular-nums}
+  :focus-visible{outline:2px solid var(--navy); outline-offset:3px}
+
+  /* ---------- barra ---------- */
+  header.bar{position:sticky; top:0; z-index:20; background:rgba(245,246,248,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex; align-items:center; justify-content:space-between; height:66px; gap:18px}
+  .marca{font-family:var(--serif); font-size:25px; font-weight:600; color:var(--navy); text-decoration:none; letter-spacing:-.02em}
+  .marca span{color:var(--signal)}
+  nav.links{display:flex; gap:26px; font-size:15px}
+  nav.links a{color:var(--muted); text-decoration:none}
+  nav.links a:hover{color:var(--navy)}
+  .cta{display:inline-block; background:var(--navy); color:#fff; text-decoration:none; padding:11px 22px; border-radius:3px; font-weight:600; font-size:15.5px; border:1px solid var(--navy)}
+  .cta:hover{background:var(--navy-d)}
+  .cta.ghost{background:transparent; color:var(--navy)}
+  .cta.ghost:hover{background:#E6EAF1}
+  @media(max-width:880px){nav.links{display:none}}
+
+  /* ---------- portada ---------- */
+  .hero{padding:74px 0 66px; border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid; grid-template-columns:1.45fr .85fr; gap:56px; align-items:start}
+  .hero h1{margin-bottom:22px}
+  .hero .acciones{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+  .reloj{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--signal); padding:26px 24px}
+  .reloj .k{font-size:13px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); font-weight:600}
+  .reloj .d{font-family:var(--serif); font-size:74px; line-height:1; color:var(--signal); font-variant-numeric:tabular-nums; margin:10px 0 4px}
+  .reloj .u{font-size:16px; color:var(--muted)}
+  .reloj hr{border:0; border-top:1px solid var(--line); margin:18px 0}
+  .reloj p{font-size:14.5px; color:var(--muted); margin:0; line-height:1.5}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr; gap:36px} .hero{padding:48px 0 44px}}
+
+  /* ---------- secciones ---------- */
+  section{padding:76px 0; border-bottom:1px solid var(--line)}
+  .cab{max-width:620px; margin-bottom:42px}
+  .cab h2{margin-bottom:14px}
+
+  /* ley */
+  .obl{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+  .obl > div{background:var(--surface); padding:26px 24px}
+  .obl h3{font-family:var(--sans); font-size:16.5px; font-weight:600; margin-bottom:7px}
+  .obl p{font-size:15.5px; color:var(--muted); margin:0}
+  .sancion{margin-top:26px; padding:20px 24px; background:#FBF0EE; border-left:4px solid var(--signal); font-size:16px}
+  .sancion strong{color:var(--signal)}
+
+  /* entregables */
+  .serv{border-top:1px solid var(--line)}
+  .serv-item{display:grid; grid-template-columns:56px 1fr; gap:22px; padding:20px 0; border-bottom:1px solid var(--line); align-items:start}
+  .serv-item .i{font-family:var(--serif); font-size:30px; color:var(--line); line-height:1}
+  .serv-item h3{margin-bottom:4px}
+  .serv-item .q{font-size:15.5px; color:var(--muted); margin:0}
+  .serv-item .r{font-size:15.5px; color:var(--muted); margin:0; padding-left:22px; border-left:2px solid var(--line)}
+  .serv-item:hover .i{color:var(--navy)}
+  @media(max-width:820px){.serv-item{grid-template-columns:38px 1fr; gap:16px}}
+
+  /* banda oscura */
+  .banda{background:var(--navy); color:#EDF1F7; border-bottom:0}
+  .banda h2{color:#fff}
+  .banda .lede{color:#B9C6DA}
+  .banda .eyebrow{color:#8FA4C4}
+  .cap{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px; margin-top:40px}
+  .cap h3{font-family:var(--sans); font-size:16.5px; font-weight:600; color:#fff; margin-bottom:7px}
+  .cap p{font-size:15.5px; color:#B9C6DA; margin:0}
+  .cap .n{font-family:var(--serif); font-size:15px; color:#7E95B8; display:block; margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #35507A}
+
+  /* perfil */
+  .perfil{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start}
+  .cred{list-style:none; margin:0; padding:0}
+  .cred li{padding:13px 0; border-bottom:1px solid var(--line); font-size:16px; display:flex; gap:14px}
+  .cred li b{font-family:var(--sans); min-width:112px; color:var(--muted); font-weight:600; font-size:14px; padding-top:2px}
+  @media(max-width:820px){.perfil{grid-template-columns:1fr; gap:32px}}
+
+  /* contacto */
+  .cont{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start}
+  .campo{margin-bottom:16px}
+  .campo label{display:block; font-size:14px; color:var(--muted); margin-bottom:5px; font-weight:500}
+  .campo input,.campo select,.campo textarea{
+    width:100%; padding:11px 13px; border:1px solid var(--line); border-radius:3px;
+    background:var(--surface); font:inherit; font-size:16px; color:var(--ink);
+  }
+  .campo textarea{min-height:110px; resize:vertical}
+  .campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--navy); outline:none}
+  .directo{background:var(--surface); border:1px solid var(--line); padding:28px 26px}
+  .directo dl{margin:0}
+  .directo dt{font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-top:20px}
+  .directo dt:first-child{margin-top:0}
+  .directo dd{margin:3px 0 0; font-size:17px}
+  .directo dd a{text-decoration:none}
+  .directo dd a:hover{text-decoration:underline}
+  .nota{font-size:14px; color:var(--muted); margin-top:22px; padding-top:18px; border-top:1px solid var(--line)}
+
+  footer{padding:40px 0; font-size:14.5px; color:var(--muted)}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between}
+  footer a{color:var(--muted)}
+
+  /* proceso */
+  .pasos{display:grid; grid-template-columns:repeat(5,1fr); margin-top:42px}
+  .paso{position:relative; padding-right:22px}
+  .paso .n{
+    width:44px; height:44px; border-radius:50%; background:var(--navy); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:var(--serif);
+    font-size:20px; position:relative; z-index:2;
+  }
+  .paso::before{content:""; position:absolute; top:22px; left:44px; right:0; height:1px; background:var(--line)}
+  .paso:last-child::before{display:none}
+  .paso h3{font-family:var(--sans); font-size:16.5px; font-weight:600; margin:18px 0 6px}
+  .paso p{font-size:15px; color:var(--muted); margin:0}
+  .paso .t{display:inline-block; font-size:12.5px; color:var(--warm); font-weight:600; margin-top:10px}
+  @media(max-width:900px){
+    .pasos{grid-template-columns:1fr}
+    .paso{padding:0 0 30px 62px}
+    .paso .n{position:absolute; left:0; top:0}
+    .paso::before{top:44px; left:22px; right:auto; bottom:0; width:1px; height:auto}
+  }
+
+  /* cadena de valor */
+  .cadena{display:grid; grid-template-columns:1fr 1fr 1fr; margin-top:40px; border:1px solid var(--line); background:var(--surface)}
+  .col{padding:0 0 26px}
+  .col + .col{border-left:1px solid var(--line)}
+  .col .k{
+    padding:13px 24px; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+    font-weight:600; color:#fff; background:var(--steel);
+  }
+  .col:nth-child(2) .k{background:var(--navy)}
+  .col:nth-child(3) .k{background:var(--warm)}
+  .col ul{list-style:none; margin:0; padding:20px 24px 0}
+  .col li{position:relative; padding-left:18px; margin-bottom:11px; font-size:15.5px; line-height:1.5}
+  .col li::before{content:""; position:absolute; left:0; top:9px; width:7px; height:7px; background:var(--line)}
+  .col:nth-child(2) li::before{background:var(--navy)}
+  .col:nth-child(3) li::before{background:var(--warm)}
+  .col .pie{padding:14px 24px 0; margin:14px 24px 0; border-top:1px solid var(--line); font-size:14.5px; color:var(--muted)}
+  .col .pie{padding:14px 0 0; margin:16px 24px 0}
+  @media(max-width:860px){
+    .cadena{grid-template-columns:1fr}
+    .col + .col{border-left:0; border-top:1px solid var(--line)}
+  }
+
+  /* resultados */
+  .result{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:28px; margin-top:38px; padding-top:32px; border-top:1px solid #35507A}
+  .result .v{font-family:var(--serif); font-size:19px; color:#fff; margin-bottom:6px; line-height:1.25}
+  .result p{font-size:15px; color:#B9C6DA; margin:0}
+
+  /* iconos y diagramas */
+  .ic{width:26px; height:26px; stroke:var(--navy); stroke-width:1.5; fill:none;
+      stroke-linecap:round; stroke-linejoin:round; margin-bottom:10px; display:block}
+  .diagrama{width:100%; height:auto; display:block; margin:34px 0 10px}
+  .pie-fig{font-size:14px; color:var(--muted); margin:0; text-align:center}
+  .paso .ic{margin:0 0 0 0; width:22px; height:22px; stroke:#fff}
+  .paso .n{gap:0}
+  .flecha{display:flex; align-items:center; justify-content:center; color:var(--line)}
+  .flecha svg{width:22px; height:22px; stroke:currentColor; stroke-width:2; fill:none}
+
+  /* planes */
+  .lanz{display:inline-flex; align-items:center; gap:9px; background:#FDF3E3; border:1px solid #E8C98F;
+        padding:7px 15px; font-size:14.5px; color:#6B4410; margin-bottom:26px}
+  .lanz b{color:#8A5A16}
+  .planes{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line)}
+  .plan{background:var(--surface); padding:26px 22px; display:flex; flex-direction:column}
+  .plan.destaca{background:#F7F9FC; border-top:4px solid var(--navy); margin-top:-1px}
+  .plan .tag{font-size:12px; letter-spacing:.09em; text-transform:uppercase; font-weight:700; color:var(--navy); margin-bottom:6px; min-height:17px}
+  .plan h3{font-size:24px; margin-bottom:4px}
+  .plan .para{font-size:14.5px; color:var(--muted); margin-bottom:18px; min-height:42px}
+  .plan .precio{font-family:var(--serif); font-size:31px; color:var(--ink); line-height:1.1}
+  .plan .antes{font-size:15px; color:var(--muted); text-decoration:line-through; margin:4px 0 0}
+  .plan .iva{font-size:13px; color:var(--muted); margin:4px 0 18px}
+  .plan ul{list-style:none; margin:0 0 20px; padding:16px 0 0; border-top:1px solid var(--line); flex:1}
+  .plan li{position:relative; padding-left:17px; margin-bottom:8px; font-size:14.5px; line-height:1.45}
+  .plan li::before{content:""; position:absolute; left:0; top:8px; width:6px; height:6px; background:var(--navy)}
+  .plan .cta{text-align:center}
+  .nota-planes{font-size:14.5px; color:var(--muted); margin-top:20px}
+  @media(max-width:860px){.planes{grid-template-columns:1fr} .plan .para,.plan .tag{min-height:0}}
+
+  /* membresia */
+  .memb{display:grid; grid-template-columns:1.05fr .95fr; gap:46px; margin-top:38px; align-items:start}
+  .memb-lista{list-style:none; margin:0; padding:0}
+  .memb-lista li{padding:11px 0; border-bottom:1px solid #35507A; font-size:15.5px; color:#EDF1F7; display:flex; gap:12px}
+  .memb-lista li span{color:#7E95B8; font-size:13px; min-width:74px; padding-top:2px}
+  .memb-caja{background:#16294A; border:1px solid #35507A; padding:26px 24px}
+  .memb-caja h3{font-family:var(--sans); font-size:16.5px; color:#fff; margin-bottom:10px}
+  .memb-caja p{font-size:15px; color:#B9C6DA; margin-bottom:14px}
+  .memb-caja .pronto{display:inline-block; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+                     font-weight:700; color:#0E1621; background:#E3C07A; padding:5px 12px; margin-bottom:16px}
+  @media(max-width:860px){.memb{grid-template-columns:1fr; gap:28px}}
+
+  /* ---------- hero cálido ---------- */
+  .badge{display:inline-flex; align-items:center; gap:8px; border:1px solid #CFDAE7; background:#EAF0F6;
+         color:var(--navy); padding:6px 16px; border-radius:999px; font-size:13.5px; margin-bottom:24px}
+  .hero h1 .w{color:var(--warm)}
+  .micro{font-size:14px; color:var(--muted); margin-top:16px}
+  .tarjeta{background:var(--navy); color:#fff; padding:30px 28px; position:relative; overflow:hidden}
+  .tarjeta::after{content:""; position:absolute; top:-70px; right:-70px; width:190px; height:190px;
+                  border:1px solid rgba(255,255,255,.14); border-radius:50%}
+  .tarjeta .eyebrow{color:#8FA4C4; margin-bottom:12px}
+  .tarjeta h2{color:#fff; font-size:27px; margin-bottom:20px; position:relative}
+  .tpaso{display:grid; grid-template-columns:30px 1fr; gap:12px; padding:14px 0; border-top:1px solid #35507A}
+  .tpaso .n{font-family:var(--sans); font-size:13.5px; font-weight:700; color:#E3C07A; padding-top:2px}
+  .tpaso b{display:block; font-family:var(--sans); font-size:15.5px; font-weight:600; color:#fff; margin-bottom:2px}
+  .tpaso span{font-size:14.5px; color:#B9C6DA; line-height:1.45}
+  .tfoot{margin-top:20px; padding-top:18px; border-top:1px solid #35507A}
+  .tfoot .k{font-size:13.5px; color:#B9C6DA}
+  .tfoot .d{font-family:var(--serif); font-size:25px; color:#fff; line-height:1.3; margin-top:4px}
+  .confianza{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:44px; padding-top:26px; border-top:1px solid var(--line)}
+  .confianza div{font-size:14.5px; color:var(--muted); display:flex; gap:9px; line-height:1.45}
+  .confianza .ck{color:var(--navy); font-weight:700}
+  @media(max-width:880px){.confianza{grid-template-columns:1fr; gap:12px}}
+
+  /* ---------- menú móvil ---------- */
+  .menu{display:none; position:relative}
+  .menu summary{list-style:none; cursor:pointer; padding:8px 12px; border:1px solid var(--line);
+                border-radius:3px; background:var(--surface); font-size:14.5px; color:var(--navy)}
+  .menu summary::-webkit-details-marker{display:none}
+  .menu[open] > div{display:block}
+  .menu > div{display:none; position:absolute; right:0; top:46px; background:var(--surface);
+              border:1px solid var(--line); min-width:220px; padding:8px 0; z-index:30;
+              box-shadow:0 8px 24px rgba(16,23,32,.10)}
+  .menu a{display:block; padding:10px 18px; color:var(--ink); text-decoration:none; font-size:15px}
+  .menu a:hover{background:#EDF0F4}
+  @media(max-width:880px){.menu{display:block} .bar .cta{display:none}}
+
+  /* ---------- whatsapp ---------- */
+  .wa{display:inline-flex; align-items:center; gap:9px; background:#128C7E; color:#fff; text-decoration:none;
+      padding:11px 20px; border-radius:3px; font-weight:600; font-size:15.5px; margin-top:6px}
+  .wa:hover{background:#0F7266}
+  .wa svg{width:19px; height:19px; fill:currentColor}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="#" class="marca">datanorma<span>.</span></a>
+    <nav class="links">
+      <a href="#ley">La ley</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#planes">Valores</a>
+      <a href="#perfil">Quiénes somos</a>
+    </nav>
+    <a href="#contacto" class="cta">Orientación gratuita</a>
+    <details class="menu">
+      <summary>Menú</summary>
+      <div>
+        <a href="#ley">La ley</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#planes">Valores</a>
+        <a href="#membresia">Cumplimiento vigente</a>
+        <a href="#perfil">Quiénes somos</a>
+        <a href="#contacto"><strong>Orientación gratuita</strong></a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">Consultoría técnica y organizacional · Chile</span>
+        <h1>Protección de datos para pymes.<br><span class="w">Un plan claro para avanzar.</span></h1>
+        <p class="lede">Prepare su empresa para la Ley 21.719. Identificamos sus brechas y las convertimos en acciones con prioridades, plazos y responsables.</p>
+        <div class="acciones">
+          <a href="#contacto" class="cta">Solicitar orientación gratuita</a>
+          <a href="#planes" class="cta ghost">Ver alcance y precios</a>
+        </div>
+        <p class="micro">Primera conversación de 30 minutos sin costo. Diagnóstico profesional desde $690.000 netos.</p>
+      </div>
+
+      <aside class="tarjeta">
+        <div class="eyebrow">De la incertidumbre a la acción</div>
+        <h2>Sepa dónde está.<br>Decida qué sigue.</h2>
+        <div class="tpaso">
+          <div class="n">01</div>
+          <div><b>Brechas identificadas</b><span>Procesos, sistemas y proveedores revisados.</span></div>
+        </div>
+        <div class="tpaso">
+          <div class="n">02</div>
+          <div><b>Prioridades concretas</b><span>Un informe comprensible para gerencia.</span></div>
+        </div>
+        <div class="tpaso">
+          <div class="n">03</div>
+          <div><b>Hoja de ruta</b><span>Acciones, responsables propuestos y plazos.</span></div>
+        </div>
+        <div class="tfoot">
+          <div class="k">Entrada en vigencia: 1 de diciembre de 2026</div>
+          <div class="d" id="cuenta">—</div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="confianza">
+      <div><span class="ck">&#10003;</span> Alcance acordado antes de comenzar</div>
+      <div><span class="ck">&#10003;</span> Diagnóstico e implementación por separado</div>
+      <div><span class="ck">&#10003;</span> Atención remota y presencial según alcance</div>
+    </div>
+  </div>
+</div>
+
+<section id="ley">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Lo que cambia</div>
+      <h2>Veintisiete años de tolerancia se terminan</h2>
+      <p class="lede">La ley anterior rigió desde 1999 sin autoridad fiscalizadora. La 21.719 crea la Agencia, fija obligaciones concretas y sanciones que sí duelen.</p>
+    </div>
+
+    <div class="obl">
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg>
+        <h3>Registro de tratamientos</h3>
+        <p>Qué datos, de quién, para qué y por cuánto tiempo.</p>
+      </div>
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <h3>Notificar en 72 horas</h3>
+        <p>Exige tener el procedimiento antes, no improvisarlo.</p>
+      </div>
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h9v12H4z"/><path d="M13 9h7v9h-7"/><path d="M8 12h1M16 14h1"/></svg>
+        <h3>Contratos con proveedores</h3>
+        <p>Tercerizar el procesamiento no terceriza la responsabilidad.</p>
+      </div>
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l8 15H4z"/><path d="M12 10v4M12 17h.01"/></svg>
+        <h3>Evaluación de impacto</h3>
+        <p>Antes de biometría, perfilamiento, cámaras o datos de salud.</p>
+      </div>
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></svg>
+        <h3>Derechos de las personas</h3>
+        <p>Acceso, rectificación, cancelación, portabilidad y bloqueo.</p>
+      </div>
+      <div>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Medidas de seguridad</h3>
+        <p>Proporcionales al riesgo, y demostrables con evidencia.</p>
+      </div>
+    </div>
+
+    <svg class="diagrama" viewBox="0 0 769 132" role="img" aria-labelledby="t72">
+      <title id="t72">Línea de tiempo del plazo de 72 horas</title>
+      <line x1="80" y1="72" x2="689" y2="72" stroke="#D8DDE4" stroke-width="3"/>
+      <line x1="486" y1="72" x2="689" y2="72" stroke="#A32C22" stroke-width="3"/>
+      <g font-family="IBM Plex Sans, sans-serif" text-anchor="middle">
+        <circle cx="80" cy="72" r="8" fill="#fff" stroke="#1F3864" stroke-width="3"/>
+        <text x="80" y="46" font-size="14.5" font-weight="600" fill="#0E1621">Detección</text>
+        <text x="80" y="102" font-size="13" fill="#5A6675">T + 0</text>
+
+        <circle cx="283" cy="72" r="8" fill="#fff" stroke="#1F3864" stroke-width="3"/>
+        <text x="283" y="46" font-size="14.5" font-weight="600" fill="#0E1621">Contención</text>
+        <text x="283" y="102" font-size="13" fill="#5A6675">24 h</text>
+
+        <circle cx="486" cy="72" r="8" fill="#fff" stroke="#1F3864" stroke-width="3"/>
+        <text x="486" y="46" font-size="14.5" font-weight="600" fill="#0E1621">Decisión</text>
+        <text x="486" y="102" font-size="13" fill="#5A6675">48 h</text>
+
+        <circle cx="689" cy="72" r="8" fill="#A32C22" stroke="#A32C22" stroke-width="3"/>
+        <text x="689" y="46" font-size="14.5" font-weight="600" fill="#A32C22">Notificación</text>
+        <text x="689" y="102" font-size="13" fill="#A32C22" font-weight="600">72 h</text>
+
+        <text x="384" y="20" font-size="12.5" fill="#5A6675" letter-spacing="1.6">ANTE UNA VULNERACIÓN DE SEGURIDAD</text>
+      </g>
+    </svg>
+    <p class="pie-fig">El reloj parte cuando la organización toma conocimiento, no cuando ocurre el incidente.</p>
+
+    <p class="sancion">Infracciones graves hasta <strong>10.000 UTM</strong>, gravísimas hasta <strong>20.000 UTM</strong>. En reincidencia, hasta el <strong>4% de los ingresos anuales</strong> en Chile.</p>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Cómo trabajamos</div>
+      <h2>Cinco pasos, sin sorpresas</h2>
+      <p class="lede">Dos semanas desde la primera conversación hasta la presentación de resultados.</p>
+    </div>
+
+    <div class="pasos">
+      <div class="paso">
+        <div class="n">1</div>
+        <h3>Conversación inicial</h3>
+        <p>Entendemos su caso y le decimos con franqueza qué necesita.</p>
+        <span class="t">30 min · sin costo</span>
+      </div>
+      <div class="paso">
+        <div class="n">2</div>
+        <h3>Levantamiento</h3>
+        <p>Entrevistas y revisión de evidencia real, no de declaraciones.</p>
+        <span class="t">3 horas · en terreno</span>
+      </div>
+      <div class="paso">
+        <div class="n">3</div>
+        <h3>Evaluación</h3>
+        <p>29 controles en 7 dominios, medidos contra el mínimo exigible.</p>
+        <span class="t">metodología versionada</span>
+      </div>
+      <div class="paso">
+        <div class="n">4</div>
+        <h3>Informe</h3>
+        <p>Hallazgos priorizados y hoja de ruta con plazos y responsables.</p>
+        <span class="t">con presentación a gerencia</span>
+      </div>
+      <div class="paso">
+        <div class="n">5</div>
+        <h3>Acompañamiento</h3>
+        <p>Hasta que el control opere, no hasta que el documento se entregue.</p>
+        <span class="t">a su ritmo</span>
+      </div>
+    </div>
+
+    <svg class="diagrama" viewBox="0 0 769 130" role="img" aria-labelledby="tmad">
+      <title id="tmad">Escala de madurez de cero a cuatro, con el mínimo exigible en nivel tres</title>
+      <g font-family="IBM Plex Sans, sans-serif">
+        <text x="0" y="16" font-size="12.5" fill="#5A6675" letter-spacing="1.6">CÓMO SE MIDE CADA CONTROL</text>
+
+        <rect x="0"   y="34" width="147" height="38" fill="#E4E8EE"/>
+        <rect x="155" y="34" width="147" height="38" fill="#D3DAE3"/>
+        <rect x="310" y="34" width="147" height="38" fill="#C2CBD8"/>
+        <rect x="465" y="34" width="147" height="38" fill="#1F3864"/>
+        <rect x="620" y="34" width="147" height="38" fill="#152643"/>
+
+        <g text-anchor="middle" font-size="17" font-weight="600">
+          <text x="73"  y="59" fill="#5A6675">0</text>
+          <text x="228" y="59" fill="#5A6675">1</text>
+          <text x="383" y="59" fill="#46586E">2</text>
+          <text x="538" y="59" fill="#ffffff">3</text>
+          <text x="693" y="59" fill="#ffffff">4</text>
+        </g>
+        <g text-anchor="middle" font-size="13" fill="#5A6675">
+          <text x="73"  y="92">Inexistente</text>
+          <text x="228" y="92">Informal</text>
+          <text x="383" y="92">Documentado</text>
+          <text x="538" y="92">Implementado</text>
+          <text x="693" y="92">Medido</text>
+        </g>
+
+        <line x1="461" y1="26" x2="461" y2="80" stroke="#A32C22" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="455" y="120" font-size="13" font-weight="600" fill="#A32C22" text-anchor="end">mínimo exigible en controles críticos</text>
+        <path d="M462 114 L470 114" stroke="#A32C22" stroke-width="2"/>
+      </g>
+    </svg>
+    <p class="pie-fig">Nivel 3 exige evidencia de ejecución. Nivel 4, además, un indicador que se revisa.</p>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Servicios</div>
+      <h2>Seis entregables, uno a la vez</h2>
+      <p class="lede">Sin paquetes cerrados. Se parte por el diagnóstico y usted decide qué sigue.</p>
+    </div>
+
+    <div class="serv">
+      <div class="serv-item">
+        <div class="i num">01</div>
+        <div>
+          <h3>Diagnóstico de cumplimiento</h3>
+          <p class="q">Madurez de 29 controles, hallazgos priorizados y hoja de ruta por plazos.</p>
+        </div>
+      </div>
+
+      <div class="serv-item">
+        <div class="i num">02</div>
+        <div>
+          <h3>Registro de actividades de tratamiento</h3>
+          <p class="q">El inventario que la ley exige, en formato mantenible y no en un cajón.</p>
+        </div>
+      </div>
+
+      <div class="serv-item">
+        <div class="i num">03</div>
+        <div>
+          <h3>Procedimiento ante vulneraciones</h3>
+          <p class="q">Roles, árbol de decisión imprimible y plantillas de notificación.</p>
+        </div>
+      </div>
+
+      <div class="serv-item">
+        <div class="i num">04</div>
+        <div>
+          <h3>Inventario y acuerdos con proveedores</h3>
+          <p class="q">Todos los terceros que tocan datos, con su contrato y aviso en 24 horas.</p>
+        </div>
+      </div>
+
+      <div class="serv-item">
+        <div class="i num">05</div>
+        <div>
+          <h3>Evaluación de impacto</h3>
+          <p class="q">Para biometría, cámaras, perfilamiento y fichas de salud.</p>
+        </div>
+      </div>
+
+      <div class="serv-item">
+        <div class="i num">06</div>
+        <div>
+          <h3>Simulacro y capacitación</h3>
+          <p class="q">Ejercicio de mesa y capacitación, con registro de asistencia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cadena">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Del hallazgo al resultado</div>
+      <h2>Para qué sirve cada entregable</h2>
+      <p class="lede">Un informe que solo enumera incumplimientos no sirve. Cada entregable cierra un hallazgo y deja evidencia que se puede mostrar.</p>
+    </div>
+
+    <svg class="diagrama" viewBox="0 0 769 116" role="img" aria-labelledby="tflow">
+      <title id="tflow">Flujo: levantamiento, evaluación, hallazgos, entregables y evidencia</title>
+      <defs>
+        <marker id="fl" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M1 1L8 5L1 9" fill="none" stroke="#9AA6B5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+      <g font-family="IBM Plex Sans, sans-serif" text-anchor="middle" font-size="13.5">
+        <rect x="0" y="30" width="130" height="48" fill="#fff" stroke="#D8DDE4"/>
+        <text x="65" y="59" fill="#0E1621">Levantamiento</text>
+        <line x1="134" y1="54" x2="152" y2="54" stroke="#9AA6B5" stroke-width="1.6" marker-end="url(#fl)"/>
+
+        <rect x="158" y="30" width="130" height="48" fill="#fff" stroke="#D8DDE4"/>
+        <text x="223" y="52" fill="#0E1621">Evaluación</text>
+        <text x="223" y="68" fill="#5A6675" font-size="12">29 controles</text>
+        <line x1="292" y1="54" x2="310" y2="54" stroke="#9AA6B5" stroke-width="1.6" marker-end="url(#fl)"/>
+
+        <rect x="316" y="30" width="130" height="48" fill="#FBF0EE" stroke="#A32C22"/>
+        <text x="381" y="59" fill="#A32C22" font-weight="600">Hallazgos</text>
+        <line x1="450" y1="54" x2="468" y2="54" stroke="#9AA6B5" stroke-width="1.6" marker-end="url(#fl)"/>
+
+        <rect x="474" y="30" width="130" height="48" fill="#1F3864"/>
+        <text x="539" y="59" fill="#fff" font-weight="600">Entregables</text>
+        <line x1="608" y1="54" x2="626" y2="54" stroke="#9AA6B5" stroke-width="1.6" marker-end="url(#fl)"/>
+
+        <rect x="632" y="30" width="137" height="48" fill="#fff" stroke="#8A5A16" stroke-width="1.5"/>
+        <text x="700" y="52" fill="#8A5A16" font-weight="600">Evidencia</text>
+        <text x="700" y="68" fill="#5A6675" font-size="12">demostrable</text>
+
+        <text x="384" y="14" font-size="12.5" fill="#5A6675" letter-spacing="1.6" text-anchor="middle">EL CICLO COMPLETO</text>
+        <text x="384" y="104" font-size="12.5" fill="#5A6675">y se vuelve a medir al año siguiente, control por control</text>
+      </g>
+    </svg>
+
+    <div class="cadena">
+      <div class="col">
+        <div class="k">Qué se detecta</div>
+        <ul>
+          <li>Proveedores sin contrato de tratamiento</li>
+          <li>Incapacidad de responder en 72 horas</li>
+          <li>Tratamientos de alto riesgo sin evaluar</li>
+          <li>Respaldos que nunca se restauraron</li>
+          <li>Accesos vivos de personas que ya salieron</li>
+          <li>Datos reales en ambientes de prueba</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="k">Qué entregamos</div>
+        <ul>
+          <li>Informe con madurez y hoja de ruta</li>
+          <li>Registro de actividades de tratamiento</li>
+          <li>Procedimiento de respuesta</li>
+          <li>Inventario y contratos con proveedores</li>
+          <li>Evaluaciones de impacto</li>
+          <li>Simulacro y capacitación</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="k">Qué gana la empresa</div>
+        <ul>
+          <li>Poder responder ante una fiscalización</li>
+          <li>Evidencia de diligencia acumulada</li>
+          <li>Responder los anexos que piden sus clientes</li>
+          <li>Menos dependencia de personas clave</li>
+          <li>Menor exposición ante un incidente</li>
+          <li>Avance medible año a año</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planes">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Valores</div>
+      <h2>Tres tramos según su realidad</h2>
+      <p class="lede">El tramo lo define la complejidad, no el tamaño solo. Basta cumplir un criterio del tramo superior para subir.</p>
+    </div>
+
+    <div class="lanz">
+      <b>Precio de lanzamiento</b>
+      <span>vigente hasta el 30 de noviembre de 2026, día previo a la plena vigencia de la ley</span>
+    </div>
+
+    <div class="planes">
+      <div class="plan">
+        <div class="tag"></div>
+        <h3>Esencial</h3>
+        <p class="para">Oficinas de servicios y comercio pequeño, sin datos sensibles.</p>
+        <div class="precio">$690.000</div>
+        <p class="antes">$990.000</p>
+        <p class="iva">valor neto, por diagnóstico</p>
+        <ul>
+          <li>Hasta 25 trabajadores</li>
+          <li>No trata datos sensibles</li>
+          <li>Una sede, hasta 3 sistemas</li>
+          <li>Sin biometría ni perfilamiento</li>
+        </ul>
+        <div class="cta"><a href="#contacto" class="cta ghost">Consultar</a></div>
+      </div>
+
+      <div class="plan destaca">
+        <div class="tag">El más frecuente</div>
+        <h3>Estándar</h3>
+        <p class="para">Clínicas, colegios, distribuidoras y empresas con reloj biométrico o cámaras.</p>
+        <div class="precio">$1.190.000</div>
+        <p class="antes">$1.690.000</p>
+        <p class="iva">valor neto, por diagnóstico</p>
+        <ul>
+          <li>Entre 26 y 100 trabajadores</li>
+          <li>Trata datos sensibles</li>
+          <li>Hasta 2 sedes y 8 sistemas</li>
+          <li>Incluye evaluación de tratamientos de alto riesgo</li>
+        </ul>
+        <div class="cta"><a href="#contacto" class="cta">Consultar</a></div>
+      </div>
+
+      <div class="plan">
+        <div class="tag"></div>
+        <h3>Ampliado</h3>
+        <p class="para">Organizaciones con varias sedes, alto volumen o calificadas como OIV o PSE.</p>
+        <div class="precio">Desde $2.400.000</div>
+        <p class="antes">&nbsp;</p>
+        <p class="iva">valor neto, según alcance</p>
+        <ul>
+          <li>Más de 100 trabajadores</li>
+          <li>Tres o más sedes</li>
+          <li>Perfilamiento sistemático o alto volumen</li>
+          <li>Calificación OIV o PSE ante la ANCI</li>
+        </ul>
+        <div class="cta"><a href="#contacto" class="cta ghost">Cotizar</a></div>
+      </div>
+    </div>
+
+    <p class="nota-planes">Los valores corresponden al diagnóstico de cumplimiento. Los entregables siguientes se cotizan una vez conocido el resultado, porque su alcance depende de lo que se encuentre. Una empresa de 20 personas con reloj biométrico se clasifica en Estándar: los datos sensibles determinan el trabajo más que la dotación.</p>
+  </div>
+</section>
+
+<section id="membresia" class="banda">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Próximamente</div>
+      <h2>Cumplir una vez no basta</h2>
+      <p class="lede">La evidencia de cumplimiento vence. La capacitación es anual, la revisión de accesos semestral, la prueba de restauración anual. Una empresa que cumple hoy, en doce meses ya no cumple, aunque no haya hecho nada mal.</p>
+    </div>
+
+    <div class="memb">
+      <div>
+        <ul class="memb-lista">
+          <li><span>Anual</span> Rediagnóstico completo, con comparación control por control contra el año anterior</li>
+          <li><span>Anual</span> Simulacro de respuesta ante vulneraciones, con informe</li>
+          <li><span>Anual</span> Capacitación al personal, con registro de asistencia</li>
+          <li><span>Semestral</span> Actualización del registro de actividades de tratamiento</li>
+          <li><span>Semestral</span> Revisión del inventario de proveedores y sus contratos</li>
+          <li><span>Permanente</span> Consultas por correo, sin límite</li>
+          <li><span>Permanente</span> Aviso cuando la autoridad publique instructivos que los afecten</li>
+        </ul>
+      </div>
+
+      <div class="memb-caja">
+        <span class="pronto">En preparación</span>
+        <h3>Cumplimiento vigente</h3>
+        <p>Suscripción mensual o anual para mantener el cumplimiento al día, sin volver a contratar cada entregable por separado.</p>
+        <p>Los valores se publicarán próximamente. Quienes contraten un diagnóstico durante el período de lanzamiento tendrán preferencia y condiciones especiales al incorporarse.</p>
+        <a href="#contacto" class="cta" style="background:#E3C07A;border-color:#E3C07A;color:#0E1621">Quiero que me avisen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="automatizacion" class="banda">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Servicios complementarios</div>
+      <h2>Cumplir obliga a mirar los procesos</h2>
+      <p class="lede">El levantamiento deja al descubierto dónde se duplica el esfuerzo y qué se hace a mano tres veces. Esa información se puede aprovechar.</p>
+    </div>
+
+    <div class="cap">
+      <div><span class="n">Six Sigma Black Belt</span><p>Rediseño de procesos con indicadores, no con presentaciones.</p></div>
+      <div><span class="n">Análisis de datos</span><p>Integración de fuentes dispersas y tableros para decidir con evidencia.</p></div>
+      <div><span class="n">Automatización</span><p>Flujos que eliminan el trabajo manual repetitivo.</p></div>
+      <div><span class="n">PMO</span><p>Veinte años llevando proyectos tecnológicos hasta producción.</p></div>
+    </div>
+
+    <p style="margin-top:30px">
+      <a href="mejora-procesos.html" class="cta" style="background:#E3C07A;border-color:#E3C07A;color:#0E1621">Ver mejora de procesos y automatización</a>
+    </p>
+  </div>
+</section>
+
+<section id="perfil">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Quiénes somos</div>
+      <h2>Un equipo que ya estuvo al otro lado de la auditoría</h2>
+    </div>
+    <div class="perfil">
+      <div>
+        <p>Profesionales con más de veinte años en industrias donde el cumplimiento nunca fue opcional: banca, salud, seguros y retail. Hemos diseñado los controles, levantado la evidencia y respondido las preguntas incómodas de auditores y reguladores.</p>
+        <p>Combinamos tres capacidades que rara vez van juntas: auditoría y gobierno de datos, arquitectura técnica de sistemas en producción, y gestión de proyectos capaz de llevar el plan hasta su ejecución. Con metodología propia, documentada y versionada.</p>
+      </div>
+      <div>
+        <ul class="cred">
+          <li><b>Trayectoria</b> <span>Más de 20 años en banca, salud, seguros y retail</span></li>
+          <li><b>Auditoría</b> <span>Diseño de controles, levantamiento de evidencia y respuesta a reguladores</span></li>
+          <li><b>Gobierno de datos</b> <span>Inventarios, linaje, calidad y ciclo de vida del dato</span></li>
+          <li><b>Formación</b> <span>Ingeniería civil en computación · MBA · Six Sigma Black Belt</span></li>
+          <li><b>Tecnología</b> <span>Integración de sistemas, arquitectura de seguridad, automatización e IA</span></li>
+          <li><b>Base</b> <span>Santiago, Chile · Remoto y presencial en todo el país</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="cab">
+      <div class="eyebrow">Contacto</div>
+      <h2>Conversemos sobre su situación</h2>
+      <p class="lede">Cuéntenos en qué está su empresa. La primera conversación no tiene costo.</p>
+    </div>
+
+    <div class="cont">
+      <form id="form">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" required>
+        </div>
+        <div class="campo">
+          <label for="empresa">Empresa</label>
+          <input id="empresa" name="empresa" required>
+        </div>
+        <div class="campo">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="campo">
+          <label for="interes">Qué le interesa</label>
+          <select id="interes" name="interes">
+            <option>Diagnóstico de cumplimiento</option>
+            <option>Registro de actividades de tratamiento</option>
+            <option>Procedimiento ante vulneraciones</option>
+            <option>Acuerdos con proveedores</option>
+            <option>Evaluación de impacto</option>
+            <option>Automatización y mejora de procesos</option>
+            <option>Todavía no lo tengo claro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Contexto</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Rubro, tamaño aproximado, y qué lo motiva a consultar."></textarea>
+        </div>
+        <button type="submit" class="cta" style="cursor:pointer">Enviar consulta</button>
+        <p class="nota">Al enviar se abrirá su programa de correo con el mensaje redactado. Los datos que comparta se usan solo para responder su consulta, conforme a nuestra <a href="privacidad.html">política de privacidad</a>.</p>
+      </form>
+
+      <div class="directo">
+        <dl>
+          <dt>Correo</dt>
+          <dd><a href="mailto:contacto@datanorma.cl">contacto@datanorma.cl</a></dd>
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56947309402">+56 9 4730 9402</a></dd>
+          <dt>WhatsApp</dt>
+          <dd><a class="wa" href="https://wa.me/56947309402?text=Hola%2C%20quiero%20consultar%20por%20el%20diagn%C3%B3stico%20de%20la%20Ley%2021.719" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 2 .9 2.1c.1.2.1.3 0 .5s-.2.4-.3.6l-.4.4c-.1.1-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1s.7-.8.9-1.1c.2-.3.4-.2.6-.1s1.6.7 1.8.9c.3.1.4.2.5.3.1.2.1.7-.1 1.5z"/></svg>
+            Escribir por WhatsApp</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/company/datanorma" target="_blank" rel="noopener">Datanorma en LinkedIn</a></dd>
+          <dt>Ubicación</dt>
+          <dd>Santiago, Chile</dd>
+        </dl>
+        <p class="nota">Datanorma entrega diagnóstico técnico y acompañamiento en seguridad y cumplimiento de protección de datos. El alcance de cada trabajo se define por escrito antes de comenzar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="anio">2026</span> Datanorma · Santiago, Chile</span>
+    <span><a href="privacidad.html">Política de privacidad</a> &nbsp;·&nbsp; <a href="mejora-procesos.html">Mejora de procesos</a> &nbsp;·&nbsp; <a href="#contacto">Solicitar diagnóstico</a></span>
+  </div>
+</footer>
+
+<script>
+  // Cuenta regresiva a la plena vigencia de la ley
+  (function(){
+    const meta = new Date(2026, 11, 1);
+    const hoy  = new Date(); hoy.setHours(0,0,0,0);
+    const dias = Math.ceil((meta - hoy) / 86400000);
+    const n = document.getElementById('cuenta');
+    if(n){
+      n.textContent = dias > 1  ? dias + " días para la entrada en vigencia"
+                    : dias === 1 ? "1 día para la entrada en vigencia"
+                    : "La ley ya se fiscaliza";
+    }
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  })();
+
+  // El formulario compone un correo: GitHub Pages no ejecuta código de servidor
+  document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim();
+    const cuerpo =
+      'Nombre: ' + v('nombre') + '\n' +
+      'Empresa: ' + v('empresa') + '\n' +
+      'Correo: ' + v('email') + '\n' +
+      'Interés: ' + v('interes') + '\n\n' +
+      'Contexto:\n' + (v('mensaje') || '(sin detalle)');
+    window.location.href = 'mailto:contacto@datanorma.cl'
+      + '?subject=' + encodeURIComponent('Consulta desde datanorma.cl — ' + v('empresa'))
+      + '&body=' + encodeURIComponent(cuerpo);
+  });
+</script>
+</body>
+</html>

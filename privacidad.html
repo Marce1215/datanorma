@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad | Datanorma</title>
+<meta name="description" content="Cómo Datanorma trata los datos personales de quienes visitan el sitio o solicitan información. Proveedores, plazos de conservación y ejercicio de derechos.">
+<link rel="canonical" href="https://datanorma.cl/privacidad.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1F3864">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://datanorma.cl/privacidad.html">
+<meta property="og:site_name" content="Datanorma">
+<meta property="og:title" content="Política de privacidad | Datanorma">
+<meta property="og:description" content="Cómo Datanorma trata los datos personales de quienes visitan el sitio o solicitan información. Proveedores, plazos de conservación y ejercicio de derechos.">
+<meta property="og:image" content="https://datanorma.cl/og-image.png">
+<meta property="og:locale" content="es_CL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --ink:#0E1621; --navy:#1F3864; --navy-d:#152643; --muted:#5A6675;
+    --line:#D8DDE4; --base:#F5F6F8; --surface:#FFFFFF;
+    --signal:#A32C22; --warm:#8A5A16; --steel:#46586E;
+    --serif:"Newsreader",Georgia,serif;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+    --wrap:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--base); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--wrap); margin:0 auto; padding:0 26px}
+  h1,h2,h3{font-family:var(--serif); font-weight:500; letter-spacing:-.012em; line-height:1.16; margin:0}
+  h1{font-size:clamp(38px,5.4vw,62px)}
+  h2{font-size:clamp(28px,3.4vw,40px)}
+  h3{font-size:21px}
+  p{margin:0 0 1em}
+  a{color:var(--navy)}
+  .lede{font-size:clamp(18px,2vw,21px); color:var(--muted); line-height:1.58}
+  .eyebrow{font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-bottom:14px}
+  .num{font-variant-numeric:tabular-nums}
+  :focus-visible{outline:2px solid var(--navy); outline-offset:3px}
+
+  /* ---------- barra ---------- */
+  header.bar{position:sticky; top:0; z-index:20; background:rgba(245,246,248,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex; align-items:center; justify-content:space-between; height:66px; gap:18px}
+  .marca{font-family:var(--serif); font-size:25px; font-weight:600; color:var(--navy); text-decoration:none; letter-spacing:-.02em}
+  .marca span{color:var(--signal)}
+  nav.links{display:flex; gap:26px; font-size:15px}
+  nav.links a{color:var(--muted); text-decoration:none}
+  nav.links a:hover{color:var(--navy)}
+  .cta{display:inline-block; background:var(--navy); color:#fff; text-decoration:none; padding:11px 22px; border-radius:3px; font-weight:600; font-size:15.5px; border:1px solid var(--navy)}
+  .cta:hover{background:var(--navy-d)}
+  .cta.ghost{background:transparent; color:var(--navy)}
+  .cta.ghost:hover{background:#E6EAF1}
+  @media(max-width:880px){nav.links{display:none}}
+
+  /* ---------- portada ---------- */
+  .hero{padding:74px 0 66px; border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid; grid-template-columns:1.45fr .85fr; gap:56px; align-items:start}
+  .hero h1{margin-bottom:22px}
+  .hero .acciones{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+  .reloj{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--signal); padding:26px 24px}
+  .reloj .k{font-size:13px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); font-weight:600}
+  .reloj .d{font-family:var(--serif); font-size:74px; line-height:1; color:var(--signal); font-variant-numeric:tabular-nums; margin:10px 0 4px}
+  .reloj .u{font-size:16px; color:var(--muted)}
+  .reloj hr{border:0; border-top:1px solid var(--line); margin:18px 0}
+  .reloj p{font-size:14.5px; color:var(--muted); margin:0; line-height:1.5}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr; gap:36px} .hero{padding:48px 0 44px}}
+
+  /* ---------- secciones ---------- */
+  section{padding:76px 0; border-bottom:1px solid var(--line)}
+  .cab{max-width:620px; margin-bottom:42px}
+  .cab h2{margin-bottom:14px}
+
+  /* ley */
+  .obl{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+  .obl > div{background:var(--surface); padding:26px 24px}
+  .obl h3{font-family:var(--sans); font-size:16.5px; font-weight:600; margin-bottom:7px}
+  .obl p{font-size:15.5px; color:var(--muted); margin:0}
+  .sancion{margin-top:26px; padding:20px 24px; background:#FBF0EE; border-left:4px solid var(--signal); font-size:16px}
+  .sancion strong{color:var(--signal)}
+
+  /* entregables */
+  .serv{border-top:1px solid var(--line)}
+  .serv-item{display:grid; grid-template-columns:56px 1fr; gap:22px; padding:20px 0; border-bottom:1px solid var(--line); align-items:start}
+  .serv-item .i{font-family:var(--serif); font-size:30px; color:var(--line); line-height:1}
+  .serv-item h3{margin-bottom:4px}
+  .serv-item .q{font-size:15.5px; color:var(--muted); margin:0}
+  .serv-item .r{font-size:15.5px; color:var(--muted); margin:0; padding-left:22px; border-left:2px solid var(--line)}
+  .serv-item:hover .i{color:var(--navy)}
+  @media(max-width:820px){.serv-item{grid-template-columns:38px 1fr; gap:16px}}
+
+  /* banda oscura */
+  .banda{background:var(--navy); color:#EDF1F7; border-bottom:0}
+  .banda h2{color:#fff}
+  .banda .lede{color:#B9C6DA}
+  .banda .eyebrow{color:#8FA4C4}
+  .cap{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px; margin-top:40px}
+  .cap h3{font-family:var(--sans); font-size:16.5px; font-weight:600; color:#fff; margin-bottom:7px}
+  .cap p{font-size:15.5px; color:#B9C6DA; margin:0}
+  .cap .n{font-family:var(--serif); font-size:15px; color:#7E95B8; display:block; margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #35507A}
+
+  /* perfil */
+  .perfil{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start}
+  .cred{list-style:none; margin:0; padding:0}
+  .cred li{padding:13px 0; border-bottom:1px solid var(--line); font-size:16px; display:flex; gap:14px}
+  .cred li b{font-family:var(--sans); min-width:112px; color:var(--muted); font-weight:600; font-size:14px; padding-top:2px}
+  @media(max-width:820px){.perfil{grid-template-columns:1fr; gap:32px}}
+
+  /* contacto */
+  .cont{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start}
+  .campo{margin-bottom:16px}
+  .campo label{display:block; font-size:14px; color:var(--muted); margin-bottom:5px; font-weight:500}
+  .campo input,.campo select,.campo textarea{
+    width:100%; padding:11px 13px; border:1px solid var(--line); border-radius:3px;
+    background:var(--surface); font:inherit; font-size:16px; color:var(--ink);
+  }
+  .campo textarea{min-height:110px; resize:vertical}
+  .campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--navy); outline:none}
+  .directo{background:var(--surface); border:1px solid var(--line); padding:28px 26px}
+  .directo dl{margin:0}
+  .directo dt{font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-top:20px}
+  .directo dt:first-child{margin-top:0}
+  .directo dd{margin:3px 0 0; font-size:17px}
+  .directo dd a{text-decoration:none}
+  .directo dd a:hover{text-decoration:underline}
+  .nota{font-size:14px; color:var(--muted); margin-top:22px; padding-top:18px; border-top:1px solid var(--line)}
+
+  footer{padding:40px 0; font-size:14.5px; color:var(--muted)}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between}
+  footer a{color:var(--muted)}
+
+  /* proceso */
+  .pasos{display:grid; grid-template-columns:repeat(5,1fr); margin-top:42px}
+  .paso{position:relative; padding-right:22px}
+  .paso .n{
+    width:44px; height:44px; border-radius:50%; background:var(--navy); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:var(--serif);
+    font-size:20px; position:relative; z-index:2;
+  }
+  .paso::before{content:""; position:absolute; top:22px; left:44px; right:0; height:1px; background:var(--line)}
+  .paso:last-child::before{display:none}
+  .paso h3{font-family:var(--sans); font-size:16.5px; font-weight:600; margin:18px 0 6px}
+  .paso p{font-size:15px; color:var(--muted); margin:0}
+  .paso .t{display:inline-block; font-size:12.5px; color:var(--warm); font-weight:600; margin-top:10px}
+  @media(max-width:900px){
+    .pasos{grid-template-columns:1fr}
+    .paso{padding:0 0 30px 62px}
+    .paso .n{position:absolute; left:0; top:0}
+    .paso::before{top:44px; left:22px; right:auto; bottom:0; width:1px; height:auto}
+  }
+
+  /* cadena de valor */
+  .cadena{display:grid; grid-template-columns:1fr 1fr 1fr; margin-top:40px; border:1px solid var(--line); background:var(--surface)}
+  .col{padding:0 0 26px}
+  .col + .col{border-left:1px solid var(--line)}
+  .col .k{
+    padding:13px 24px; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+    font-weight:600; color:#fff; background:var(--steel);
+  }
+  .col:nth-child(2) .k{background:var(--navy)}
+  .col:nth-child(3) .k{background:var(--warm)}
+  .col ul{list-style:none; margin:0; padding:20px 24px 0}
+  .col li{position:relative; padding-left:18px; margin-bottom:11px; font-size:15.5px; line-height:1.5}
+  .col li::before{content:""; position:absolute; left:0; top:9px; width:7px; height:7px; background:var(--line)}
+  .col:nth-child(2) li::before{background:var(--navy)}
+  .col:nth-child(3) li::before{background:var(--warm)}
+  .col .pie{padding:14px 24px 0; margin:14px 24px 0; border-top:1px solid var(--line); font-size:14.5px; color:var(--muted)}
+  .col .pie{padding:14px 0 0; margin:16px 24px 0}
+  @media(max-width:860px){
+    .cadena{grid-template-columns:1fr}
+    .col + .col{border-left:0; border-top:1px solid var(--line)}
+  }
+
+  /* resultados */
+  .result{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:28px; margin-top:38px; padding-top:32px; border-top:1px solid #35507A}
+  .result .v{font-family:var(--serif); font-size:19px; color:#fff; margin-bottom:6px; line-height:1.25}
+  .result p{font-size:15px; color:#B9C6DA; margin:0}
+
+  /* iconos y diagramas */
+  .ic{width:26px; height:26px; stroke:var(--navy); stroke-width:1.5; fill:none;
+      stroke-linecap:round; stroke-linejoin:round; margin-bottom:10px; display:block}
+  .diagrama{width:100%; height:auto; display:block; margin:34px 0 10px}
+  .pie-fig{font-size:14px; color:var(--muted); margin:0; text-align:center}
+  .paso .ic{margin:0 0 0 0; width:22px; height:22px; stroke:#fff}
+  .paso .n{gap:0}
+  .flecha{display:flex; align-items:center; justify-content:center; color:var(--line)}
+  .flecha svg{width:22px; height:22px; stroke:currentColor; stroke-width:2; fill:none}
+
+  /* planes */
+  .lanz{display:inline-flex; align-items:center; gap:9px; background:#FDF3E3; border:1px solid #E8C98F;
+        padding:7px 15px; font-size:14.5px; color:#6B4410; margin-bottom:26px}
+  .lanz b{color:#8A5A16}
+  .planes{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line)}
+  .plan{background:var(--surface); padding:26px 22px; display:flex; flex-direction:column}
+  .plan.destaca{background:#F7F9FC; border-top:4px solid var(--navy); margin-top:-1px}
+  .plan .tag{font-size:12px; letter-spacing:.09em; text-transform:uppercase; font-weight:700; color:var(--navy); margin-bottom:6px; min-height:17px}
+  .plan h3{font-size:24px; margin-bottom:4px}
+  .plan .para{font-size:14.5px; color:var(--muted); margin-bottom:18px; min-height:42px}
+  .plan .precio{font-family:var(--serif); font-size:31px; color:var(--ink); line-height:1.1}
+  .plan .antes{font-size:15px; color:var(--muted); text-decoration:line-through; margin:4px 0 0}
+  .plan .iva{font-size:13px; color:var(--muted); margin:4px 0 18px}
+  .plan ul{list-style:none; margin:0 0 20px; padding:16px 0 0; border-top:1px solid var(--line); flex:1}
+  .plan li{position:relative; padding-left:17px; margin-bottom:8px; font-size:14.5px; line-height:1.45}
+  .plan li::before{content:""; position:absolute; left:0; top:8px; width:6px; height:6px; background:var(--navy)}
+  .plan .cta{text-align:center}
+  .nota-planes{font-size:14.5px; color:var(--muted); margin-top:20px}
+  @media(max-width:860px){.planes{grid-template-columns:1fr} .plan .para,.plan .tag{min-height:0}}
+
+  /* membresia */
+  .memb{display:grid; grid-template-columns:1.05fr .95fr; gap:46px; margin-top:38px; align-items:start}
+  .memb-lista{list-style:none; margin:0; padding:0}
+  .memb-lista li{padding:11px 0; border-bottom:1px solid #35507A; font-size:15.5px; color:#EDF1F7; display:flex; gap:12px}
+  .memb-lista li span{color:#7E95B8; font-size:13px; min-width:74px; padding-top:2px}
+  .memb-caja{background:#16294A; border:1px solid #35507A; padding:26px 24px}
+  .memb-caja h3{font-family:var(--sans); font-size:16.5px; color:#fff; margin-bottom:10px}
+  .memb-caja p{font-size:15px; color:#B9C6DA; margin-bottom:14px}
+  .memb-caja .pronto{display:inline-block; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+                     font-weight:700; color:#0E1621; background:#E3C07A; padding:5px 12px; margin-bottom:16px}
+  @media(max-width:860px){.memb{grid-template-columns:1fr; gap:28px}}
+
+  /* ---------- hero cálido ---------- */
+  .badge{display:inline-flex; align-items:center; gap:8px; border:1px solid #CFDAE7; background:#EAF0F6;
+         color:var(--navy); padding:6px 16px; border-radius:999px; font-size:13.5px; margin-bottom:24px}
+  .hero h1 .w{color:var(--warm)}
+  .micro{font-size:14px; color:var(--muted); margin-top:16px}
+  .tarjeta{background:var(--navy); color:#fff; padding:30px 28px; position:relative; overflow:hidden}
+  .tarjeta::after{content:""; position:absolute; top:-70px; right:-70px; width:190px; height:190px;
+                  border:1px solid rgba(255,255,255,.14); border-radius:50%}
+  .tarjeta .eyebrow{color:#8FA4C4; margin-bottom:12px}
+  .tarjeta h2{color:#fff; font-size:27px; margin-bottom:20px; position:relative}
+  .tpaso{display:grid; grid-template-columns:30px 1fr; gap:12px; padding:14px 0; border-top:1px solid #35507A}
+  .tpaso .n{font-family:var(--sans); font-size:13.5px; font-weight:700; color:#E3C07A; padding-top:2px}
+  .tpaso b{display:block; font-family:var(--sans); font-size:15.5px; font-weight:600; color:#fff; margin-bottom:2px}
+  .tpaso span{font-size:14.5px; color:#B9C6DA; line-height:1.45}
+  .tfoot{margin-top:20px; padding-top:18px; border-top:1px solid #35507A}
+  .tfoot .k{font-size:13.5px; color:#B9C6DA}
+  .tfoot .d{font-family:var(--serif); font-size:25px; color:#fff; line-height:1.3; margin-top:4px}
+  .confianza{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:44px; padding-top:26px; border-top:1px solid var(--line)}
+  .confianza div{font-size:14.5px; color:var(--muted); display:flex; gap:9px; line-height:1.45}
+  .confianza .ck{color:var(--navy); font-weight:700}
+  @media(max-width:880px){.confianza{grid-template-columns:1fr; gap:12px}}
+
+  /* ---------- menú móvil ---------- */
+  .menu{display:none; position:relative}
+  .menu summary{list-style:none; cursor:pointer; padding:8px 12px; border:1px solid var(--line);
+                border-radius:3px; background:var(--surface); font-size:14.5px; color:var(--navy)}
+  .menu summary::-webkit-details-marker{display:none}
+  .menu[open] > div{display:block}
+  .menu > div{display:none; position:absolute; right:0; top:46px; background:var(--surface);
+              border:1px solid var(--line); min-width:220px; padding:8px 0; z-index:30;
+              box-shadow:0 8px 24px rgba(16,23,32,.10)}
+  .menu a{display:block; padding:10px 18px; color:var(--ink); text-decoration:none; font-size:15px}
+  .menu a:hover{background:#EDF0F4}
+  @media(max-width:880px){.menu{display:block} .bar .cta{display:none}}
+
+  /* ---------- whatsapp ---------- */
+  .wa{display:inline-flex; align-items:center; gap:9px; background:#128C7E; color:#fff; text-decoration:none;
+      padding:11px 20px; border-radius:3px; font-weight:600; font-size:15.5px; margin-top:6px}
+  .wa:hover{background:#0F7266}
+  .wa svg{width:19px; height:19px; fill:currentColor}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="index.html" class="marca">datanorma<span>.</span></a>
+    <nav class="links">
+      <a href="index.html#ley">La ley</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#planes">Valores</a>
+      <a href="index.html#perfil">Quiénes somos</a>
+    </nav>
+    <a href="index.html#contacto" class="cta">Orientación gratuita</a>
+    <details class="menu">
+      <summary>Menú</summary>
+      <div>
+        <a href="index.html#ley">La ley</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#planes">Valores</a>
+        <a href="index.html#perfil">Quiénes somos</a>
+        <a href="index.html#contacto"><strong>Orientación gratuita</strong></a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">Documento legal</span>
+    <h1>Política de privacidad</h1>
+    <p class="lede" style="max-width:720px">Cómo tratamos los datos personales de quienes visitan este sitio o nos contactan. Última actualización: <span id="fecha">septiembre de 2026</span>.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap" style="max-width:820px">
+    <h2>1. Quién es el responsable</h2>
+    <p>Datanorma, con domicilio en Santiago, Chile, es el responsable del tratamiento de los datos personales recogidos a través de este sitio. Para cualquier consulta sobre esta política puede escribir a <a href="mailto:contacto@datanorma.cl">contacto@datanorma.cl</a>.</p>
+
+    <h2>2. Qué datos recogemos</h2>
+    <p><strong>Datos que usted nos entrega.</strong> Si utiliza el formulario de contacto, nos escribe por correo o por WhatsApp, recibimos los datos que decida compartir: nombre, empresa, dirección de correo, teléfono y el contenido de su mensaje.</p>
+    <p><strong>Datos técnicos.</strong> Este sitio se entrega a través de Cloudflare, que registra datos técnicos de la conexión como la dirección IP y el tipo de navegador, con fines de seguridad y disponibilidad del servicio.</p>
+    <p><strong>Sin cookies de seguimiento.</strong> Este sitio no instala cookies publicitarias ni de analítica, y no utiliza herramientas de seguimiento de comportamiento.</p>
+
+    <h2>3. Para qué los usamos</h2>
+    <ul class="cred" style="margin-bottom:22px">
+      <li><b>Finalidad</b> <span>Responder su consulta y, si corresponde, elaborar una propuesta de servicios</span></li>
+      <li><b>Base</b> <span>Su solicitud expresa al contactarnos, y el interés legítimo en mantener seguro el sitio</span></li>
+      <li><b>Uso</b> <span>No utilizamos sus datos para publicidad ni los compartimos con terceros con fines comerciales</span></li>
+    </ul>
+
+    <h2>4. Cómo funciona el formulario</h2>
+    <p>El formulario de contacto de este sitio no envía información a ningún servidor: abre su propio programa de correo con el mensaje redactado, para que usted decida si lo envía. Los datos viajan por su cuenta de correo, no por la nuestra.</p>
+
+    <h2>5. Con quién compartimos datos</h2>
+    <p>Utilizamos proveedores que tratan datos por nuestra cuenta, en calidad de encargados de tratamiento:</p>
+    <ul class="cred" style="margin-bottom:22px">
+      <li><b>Cloudflare</b> <span>Entrega del sitio, servicio DNS y protección. Trata datos técnicos de conexión</span></li>
+      <li><b>GitHub Pages</b> <span>Alojamiento de las páginas de este sitio</span></li>
+      <li><b>Zoho Mail</b> <span>Correo corporativo. Trata el contenido de los mensajes que nos envía</span></li>
+      <li><b>WhatsApp</b> <span>Solo si usted elige ese canal, conforme a las condiciones de su propio proveedor</span></li>
+    </ul>
+    <p>Estos proveedores tratan datos fuera de Chile. Mantenemos con ellos las condiciones contractuales disponibles en sus respectivos servicios y revisamos periódicamente los resguardos aplicables.</p>
+
+    <h2>6. Por cuánto tiempo los conservamos</h2>
+    <p>Las consultas que no derivan en una relación comercial se conservan por un máximo de doce meses. Si contrata nuestros servicios, la conservación se rige por el contrato correspondiente y por los plazos legales aplicables.</p>
+
+    <h2>7. Sus derechos</h2>
+    <p>Puede solicitar acceso, rectificación, cancelación, oposición, portabilidad y bloqueo de sus datos personales escribiendo a <a href="mailto:contacto@datanorma.cl">contacto@datanorma.cl</a>. Responderemos dentro de los plazos que establece la normativa vigente.</p>
+    <p>Si considera que sus derechos no fueron atendidos adecuadamente, podrá reclamar ante la Agencia de Protección de Datos Personales, una vez que entre en funcionamiento.</p>
+
+    <h2>8. Seguridad</h2>
+    <p>Aplicamos medidas técnicas y organizativas proporcionales al riesgo, incluyendo cifrado en tránsito mediante TLS, autenticación multifactor en los accesos administrativos y control de acceso restringido a la información de clientes.</p>
+
+    <h2>9. Datos de nuestros clientes</h2>
+    <p>Cuando prestamos servicios de diagnóstico, trabajamos bajo el principio de minimización: la documentación de los levantamientos identifica a las personas por su cargo y no por su nombre. Si un encargo exige acceder a datos personales, suscribimos previamente un acuerdo de tratamiento con el cliente.</p>
+
+    <h2>10. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política cuando cambien nuestros servicios, nuestros proveedores o la normativa aplicable. La fecha de última actualización aparece al inicio de este documento.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="anio">2026</span> Datanorma · Santiago, Chile</span>
+    <span><a href="index.html">Inicio</a> &nbsp;·&nbsp; <a href="privacidad.html">Política de privacidad</a> &nbsp;·&nbsp; <a href="index.html#contacto">Contacto</a></span>
+  </div>
+</footer>
+<script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+</body>
+</html>
